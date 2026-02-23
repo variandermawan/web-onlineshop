@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ShoeStyle — Toko Sepatu Premium</title>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <meta name="description" content="ShoeStyle - Toko Sepatu Premium Berkualitas. Sneakers, Running, Boots,Slip-On, Formal.">
+</head>
+<body>
+  <!-- Navbar / Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <a href="#" class="logo">
+          <span class="logo-mark">SS</span>
+          <span class="logo-text">ShoeStyle</span>
+        </a>
+      </div>
+
+      <nav class="nav" id="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#produk" class="nav-link">Produk</a></li>
+          <li><a href="#about" class="nav-link">Tentang Kami</a></li>
+          <li><a href="#contact" class="nav-link">Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="actions">
+        <button id="theme-toggle" aria-label="Toggle theme" class="btn-icon">🌓</button>
+        <button class="cart-btn btn-icon" id="cart-btn" aria-label="Keranjang">
+          🛒 <span id="cart-count" class="cart-count">0</span>
+        </button>
+
+        <button id="hamburger" class="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-text fade-in">
+        <h1>ShoeStyle – Toko Sepatu Premium Berkualitas</h1>
+        <p>Temukan koleksi sepatu terbaik: sneakers, running, boots, slip-on, dan sepatu formal. Kualitas premium tanpa kompromi.</p>
+        <a href="#produk" class="btn btn-primary">Lihat Produk</a>
+      </div>
+      <div class="hero-image fade-in-delay">
+        <!-- Placeholder estetik -->
+        <img src="
+        teema.jpg" alt="ShoeStyle hero">
+      </div>
+    </div>
+  </section>
+
+  <!-- Produk / Katalog -->
+  <section id="produk" class="products-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Produk Sepatu</h2>
+        <div class="controls">
+          <input id="search-input" class="search" type="search" placeholder="Cari sepatu berkualitas..." />
+          <div class="filters" id="category-filters">
+            <button class="filter-btn active" data-cat="all">All</button>
+            <button class="filter-btn" data-cat="Sneakers">Sneakers</button>
+            <button class="filter-btn" data-cat="Running">Running</button>
+            <button class="filter-btn" data-cat="Boots">Boots</button>
+            <button class="filter-btn" data-cat="Slip-On">Slip-On</button>
+            <button class="filter-btn" data-cat="Formal">Formal</button>
+          </div>
+        </div>
+      </div>
+
+      <div id="products-grid" class="products-grid">
+        <!-- Produk akan dirender via JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Tentang Kami -->
+  <section id="about" class="about-section">
+    <div class="container about-grid">
+      <div class="about-text">
+        <h3>Tentang ShoeStyle</h3>
+        <p>ShoeStyle berdiri untuk memberikan sepatu berkualitas premium dengan harga yang terjangkau. Kami berkomitmen pada produk asli, pelayanan ramah, dan kepuasan pelanggan.</p>
+
+        <h4>Visi</h4>
+        <p>Menjadi pilihan utama pelanggan untuk sepatu berkualitas yang stylish dan nyaman.</p>
+
+        <h4>Misi</h4>
+        <ul>
+          <li>Menyediakan variasi sepatu berkualitas.</li>
+          <li>Memberikan layanan cepat dan aman.</li>
+          <li>Mengutamakan originalitas dan nilai.</li>
+        </ul>
+      </div>
+
+      <div class="about-cards">
+        <div class="card small">
+          <h5>Keunggulan</h5>
+          <ul>
+            <li>Produk asli</li>
+            <li>Harga kompetitif</li>
+            <li>Kualitas premium</li>
+            <li>Garansi kualitas</li>
+          </ul>
+        </div>
+        <div class="card small">
+          <h5>Alamat</h5>
+          <p>Jl. Rajasinga no 666 RT001/RW010 Selatan, Pasar Monday, Jakarta Timur</p>
+          <h5>Jam operasional</h5> <p>Senin - Jumat (10.00 - 19.00)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="contact" class="contact-section">
+    <div class="container contact-grid">
+      <div class="contact-form">
+        <h3>Kontak Kami</h3>
+        <form id="contact-form">
+          <div class="form-row">
+            <input type="text" id="name" name="name" placeholder="Nama" required>
+          </div>
+          <div class="form-row">
+            <input type="email" id="email" name="email" placeholder="Email" required>
+          </div>
+          <div class="form-row">
+            <textarea id="message" name="message" rows="5" placeholder="Pesan" required></textarea>
+          </div>
+          <div class="form-row">
+            <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h3>Follow kami</h3>
+        <p>Ikuti update & promo terbaru melalui media sosial:</p>
+        <div class="social-links">
+          <a href="#" class="social">Facebook</a>
+          <a href="#" class="social">Instagram</a>
+          <a href="#" class="social">TikTok</a>
+        </div>
+
+        <h4>Customer Service</h4>
+        <p>(+62) 878 1320 8730</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <p>© <span id="year"></span> ShoeStyle — Semua hak dilindungi.</p>
+  </div>
+</footer>
+
+  <!-- ========== NEW: Cart Panel (slide-in) ========== -->
+  <aside id="cart-panel" class="cart-panel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Keranjang Belanja</h3>
+      <button id="cart-close" class="cart-close" aria-label="Tutup keranjang">✕</button>
+    </div>
+    <div id="cart-items" class="cart-items">
+      <!-- items rendered by JS -->
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <strong id="cart-total">Rp0</strong>
+      </div>
+      <div class="cart-actions">
+        <button id="btn-checkout" class="btn btn-primary full">Checkout</button>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Overlay for panel -->
+  <div id="panel-overlay" class="panel-overlay" aria-hidden="true"></div>
+
+  <!-- ========== NEW: Checkout Panel (slide-in) ========== -->
+  <aside id="checkout-panel" class="checkout-panel" aria-hidden="true">
+    <div class="checkout-header">
+      <h3>Checkout</h3>
+      <button id="checkout-close" class="cart-close" aria-label="Tutup checkout">✕</button>
+    </div>
+
+    <form id="checkout-form" class="checkout-form">
+      <div class="form-row"><label>Nama lengkap <input type="text" name="fullname" required></label></div>
+      <div class="form-row"><label>Nomor telepon <input type="tel" name="phone" required></label></div>
+      <div class="form-row"><label>Alamat lengkap <textarea name="address" rows="3" required></textarea></label></div>
+      <div class="form-row"><label>Email <input type="email" name="email" required></label></div>
+
+      <div class="form-row">
+        <label>Metode pembayaran</label>
+        <select name="payment" required>
+          <option value="">Pilih metode pembayaran</option>
+          <option>COD</option>
+          <option>Transfer Bank</option>
+          <option>E-Wallet</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <label>Metode pengiriman</label>
+        <select name="shipping" required>
+          <option value="">Pilih metode pengiriman</option>
+          <option>JNE</option>
+          <option>J&T</option>
+          <option>SiCepat</option>
+        </select>
+      </div>
+
+      <div class="form-row">
+        <div class="checkout-summary">
+          <div>Subtotal: <span id="checkout-subtotal">Rp0</span></div>
+          <div>Ongkos kirim: <span id="checkout-shipping">Rp0</span></div>
+          <div><strong>Total: <span id="checkout-total">Rp0</span></strong></div>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <button type="submit" class="btn btn-primary full">Bayar Sekarang</button>
+      </div>
+    </form>
+  </aside>
+
+<!-- Updated index.html with success popup --><div id="success-modal" class="success-modal" aria-hidden="true">
+  <div class="success-card">
+    <div class="success-icon">✔️</div>
+    <h3>Pembayaran Berhasil!</h3>
+    <button id="success-ok" class="btn">OK</button>
+  </div>
+</div>
+
+<!-- Popup Pilih Ukuran -->
+<div id="size-popup" class="size-popup hidden">
+  <div class="size-popup-content">
+    <h3>Pilih Ukuran</h3>
+    <div class="size-options">
+      <button class="size-btn">38</button>
+      <button class="size-btn">39</button>
+      <button class="size-btn">40</button>
+      <button class="size-btn">41</button>
+      <button class="size-btn">42</button>
+      <button class="size-btn">43</button>
+      <button class="size-btn">44</button>
+    </div>
+    <button id="cancel-size" class="cancel-btn">Batal</button>
+  </div>
+</div>
+
+<!-- Toast Notification -->
+<div id="toast" class="toast-box"></div>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
